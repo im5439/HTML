@@ -1,48 +1,61 @@
 <!doctype html>
+
 <head>
-<title>WEB1 - Welcome</title>
-<meta charset="utf-8">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154505108-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <title>WEB - Welcome</title>
+  <meta charset="utf-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154505108-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-154505108-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154505108-1');
+  </script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1><a href="index.html">WEB</h1>
-  <ol>
-    <li><a href="1.html">HTML</li>
-    <li><a href="2.html">CSS</li>
-    <li><a href="3.html">JavaScript</li></a>
-  </ol>
-  <h2>WEB</h2>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>WEB</h2>
       <img src="it-solution1.jpg" width="80%">
-    <p>
-    WEB is a computer programming system created by Donald E. Knuth as the first implementation of what he called "literate programming": the idea that one could create software as works of literature, by embedding source code inside descriptive text, rather than the reverse (as is common practice in most programming languages), in an order that is convenient for exposition to human readers, rather than in the order demanded by the compiler.
+      <p>
+        WEB is a computer programming system created by Donald E. Knuth as the first implementation of what he called "literate programming": the idea that one could create software as works of literature, by embedding source code inside descriptive
+        text, rather than the reverse (as is common practice in most programming languages), in an order that is convenient for exposition to human readers, rather than in the order demanded by the compiler.
 
-    WEB consists of two secondary programs: TANGLE, which produces compilable Pascal code from the source texts, and WEAVE, which produces nicely-formatted, printable documentation using TeX.
+        WEB consists of two secondary programs: TANGLE, which produces compilable Pascal code from the source texts, and WEAVE, which produces nicely-formatted, printable documentation using TeX.
 
-    CWEB is a version of WEB for the C programming language, while noweb is a separate literate programming tool, which is inspired by WEB (as reflected in the name) and which is language agnostic.
+        CWEB is a version of WEB for the C programming language, while noweb is a separate literate programming tool, which is inspired by WEB (as reflected in the name) and which is language agnostic.
 
-    The most significant programs written in WEB are TeX and Metafont. Modern TeX distributions use another program Web2C to convert WEB source to C.
-  </p>
+        The most significant programs written in WEB are TeX and Metafont. Modern TeX distributions use another program Web2C to convert WEB source to C.
+      </p>
+    </div>
+  </div>
   <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5df24d7bd96992700fcbfd16/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5df24d7bd96992700fcbfd16/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
   <br>
   <br>
-  </body>
+</body>
