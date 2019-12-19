@@ -16,38 +16,47 @@
 
     gtag('config', 'UA-154505108-1');
   </script>
+  <!-- ====================================================== -->
   <link rel="stylesheet" href="style.css">
+
+  <script>
+    function LinksSetColor(color) {
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        alist[i].style.color = color;
+        i = i + 1;
+      }
+    }
+    function BodySetColor(color) {
+      document.querySelector('body').style.color = color;
+    }
+    function BodySetBackgroundColor(color) {
+      document.querySelector('body').style.backgroundColor = color;
+    }
+    function nightDayHandler(self) {
+      if (self.value === 'night') {
+        BodySetBackgroundColor('black');
+        BodySetColor('white');
+        self.value = 'day';
+
+        LinksSetColor('powderblue');
+
+      } else {
+        BodySetBackgroundColor('white');
+        BodySetColor('black');
+        self.value = 'night'
+
+        LinksSetColor('black');
+      }
+    }
+  </script>
 </head>
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <input type="button" value="night" onclick="
-   var target = document.querySelector('body');
-   if(this.value === 'night'){
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value = 'day';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color='powderblue';
-      i = i + 1;
-    }
-
-  } else {
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    this.value = 'night'
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color='black';
-      i = i + 1;
-    }
-
-  }
+  nightDayHandler(this);
   ">
   <div id="grid">
     <ol>
@@ -82,16 +91,7 @@
     </div>
   </div>
   <input type="button" value="night" onclick="
-   var target = document.querySelector('body')
-   if(this.value === 'night'){
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value = 'day';
-  } else {
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    this.value = 'night'
-  }
+    nightDayHandler(this);
   ">
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
